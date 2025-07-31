@@ -3,11 +3,11 @@
     - name: Checks connection
       ansible.builtin.ping:
 
-  - name: Get uptime information
-    ansible.builtin.shell: /usr/bin/uptime
-    register: result
+    - name: Get uptime information
+      ansible.builtin.shell: /usr/bin/uptime
+      register: result
 
-  - name: Print return information from the previous task
-    ansible.builtin.debug:
-      var: result
-      verbosity: 2
+    - name: Print return information from the previous task
+      ansible.builtin.debug:
+        var: result
+        verbosity: 2
