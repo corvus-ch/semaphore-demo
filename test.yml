@@ -1,4 +1,4 @@
-hosts: remote
-tasks:
-  - name: Checks connection
-    ansible.builtin.ping:
+- hosts: remote
+  tasks:
+    - name: Checks connection
+      ansible.builtin.ping:
